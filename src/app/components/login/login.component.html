@@ -1,0 +1,23 @@
+<form action="login">
+
+        <label>Username:</label>
+        <input type="text" name="username" placeholder="Username..." [(ngModel)]="credentials.username">
+        <br><br>
+    
+        <label>Password:</label>
+        <input type="password" name="Password" placeholder="Password..." [(ngModel)]="credentials.password">
+        <br><br>
+    
+        <label>Type:</label>
+        <select name="type"  [(ngModel)]="credentials.type">
+            <option selected disabled>Select Type</option>
+            <option value="customer">Customer</option>
+            <option value="company">Company</option>
+            <option value="admin">Admin</option>
+        </select>
+        <br><br>
+        <button (click)="login()">Login</button>
+    </form>
+    
+    
+    
